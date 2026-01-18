@@ -1,0 +1,27 @@
+# macOS junk
+.DS_Store
+.AppleDouble
+.localized
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.ipynb_checkpoints/
+.ipynb_checkpoints/
+
+# Environments
+venv/
+env/
+.venv/
+.conda/
+anaconda3/
+
+# VS Code / Editors
+.vscode/
+.idea/
+
+# Logs / Temp
+*.log
+*.tmp
