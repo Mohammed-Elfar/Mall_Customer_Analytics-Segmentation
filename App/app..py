@@ -18,12 +18,14 @@ st.title(" Mall Customer Analytics & Segmentation")
 # ────────────────────────────────────────────────
 @st.cache_resource
 def load_artifacts():
-    base = "/Users/mohammedmahmood/Desktop/Data projects/Projects/Mall_Customers_Segmentation/"
+    BASE_DIR = Path(__file__).resolve().parent.parent  
+    # App/app.py  → project root
+
     return (
-        pd.read_csv(base + "data/mall_customers_with_clusters.csv"),
-        joblib.load(base + "models/customer_segmentation_Final_Pipeline.joblib"),
-        joblib.load(base + "models/cluster_names.joblib"),
-        pd.read_csv(base + "data/cluster_profiles.csv", index_col=0)
+        pd.read_csv(BASE_DIR / "data/mall_customers_with_clusters.csv"),
+        joblib.load(BASE_DIR / "models/customer_segmentation_Final_Pipeline.joblib"),
+        joblib.load(BASE_DIR / "models/cluster_names.joblib"),
+        pd.read_csv(BASE_DIR / "data/cluster_profiles.csv", index_col=0)
     )
 
 df, pipeline, cluster_names, cluster_profiles = load_artifacts()
