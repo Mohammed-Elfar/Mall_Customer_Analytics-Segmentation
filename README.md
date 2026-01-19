@@ -7,6 +7,10 @@ The goal is to help **business and marketing teams** better understand customer 
 The project covers the **full ML lifecycle**:
 data understanding → analysis → modeling → interpretation → deployment.
 
+**The final solutin was deployed using Streamlit, providing an interactive application with multiple tabs:**
+
+link of the app : https://customers-analytics-and-segmentation.streamlit.app/
+
 ---
 
 ##  Business Objective
